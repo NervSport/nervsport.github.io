@@ -16,12 +16,53 @@
     font-weight: 900;
 }
 
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('../fonts/RobotoCondensed-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('../fonts/RobotoCondensed-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('../fonts/RobotoCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('../fonts/RobotoCondensed-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+
 
 :root {
     --midgray: #404040A0;
     --accent-color: #400000C0;
-    --accent-color: #2ecc71;
+    --super-green: #2ecc71;
     --accent-color: #0275b2;
+    --cyber-orange: #FF8000;    
     --accent-color: #83c3f1;
     --accent-color: hsl(205, 80%, 70%);
 }
@@ -31,7 +72,6 @@ body * {
     color: var(--midgray);
     font-family: Roboto;
     font-size: 80%;
-    /*font-weight: 700;*/
     font-variant: small-caps;
 }
 
@@ -136,10 +176,21 @@ marquee {
 
 a {
     color: unset !important;
-    border-bottom: 2px solid transparent !important;
+    border-top: 2px solid transparent !important;
+    /*border-bottom: 2px solid transparent !important;*/
 }
 
 a:hover {
-    border-bottom: 2px solid #FFFFFF !important;
+    border-top: 2px solid #FFFFFF !important;
+    /*border-bottom: 2px solid #FFFFFF !important;*/
 }
 
+#version {
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    position: fixed;
+    bottom: 0;
+    font-size: 50%;
+    color: var(--cyber-orange);
+}
