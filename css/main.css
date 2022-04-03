@@ -79,7 +79,7 @@ body * {
 
 .logo-left, .logo-right {
     font-weight: 900 !important;
-    transform: scale(1, 0.75);
+    transform: scale(1, 0.666);
     display: inline-block;
 }
 
@@ -159,10 +159,10 @@ body * {
     --aug-r: 0.5em;
     --aug-bl: 1em;
     --aug-border-all: 0px;
-    --aug-border-bg: var(--midgray);
+    --aug-border-bg: transparent;
     --aug-inlay-all: 0px;
     --aug-inlay-bg: var(--midgray);
-    border: 2px solid var(--midgray);
+    /*border: 2px solid var(--midgray);*/
     text-align: left;
     padding-top: 4px;
     color: #FFFFFF;
@@ -174,13 +174,13 @@ marquee {
     font-weight: 700;
 }
 
-a {
+#main-menu-list-container a {
     color: unset !important;
     border-top: 2px solid transparent !important;
     /*border-bottom: 2px solid transparent !important;*/
 }
 
-a:hover {
+#main-menu-list-container a:hover {
     border-top: 2px solid #FFFFFF !important;
     /*border-bottom: 2px solid #FFFFFF !important;*/
 }
@@ -189,8 +189,6 @@ a:hover {
     text-align: center;
     width: 100%;
     font-style: italic;
-    position: fixed;
-    bottom: 0;
     font-size: 50%;
     color: var(--cyber-orange);
 }
