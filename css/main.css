@@ -18,7 +18,12 @@
 
 
 :root {
-    --midgray: #404040C0;
+    --midgray: #404040A0;
+    --accent-color: #400000C0;
+    --accent-color: #2ecc71;
+    --accent-color: #0275b2;
+    --accent-color: #83c3f1;
+    --accent-color: hsl(205, 80%, 70%);
 }
 
 
@@ -26,7 +31,7 @@ body * {
     color: var(--midgray);
     font-family: Roboto;
     font-size: 80%;
-    font-weight: 700;
+    /*font-weight: 700;*/
     font-variant: small-caps;
 }
 
@@ -39,18 +44,18 @@ body * {
 }
 
 .logo-left {
-    color: #83c3f1;
+    color: var(--accent-color);
 }
 
 .logo-right {
     position: relative;
-    left: -16px;
+    left: -12px;
     font-style: italic;
 }
 
 
 .color-sky {
-    color: #83c3f1;
+    color: var(--accent-color);
 }
 
 
@@ -62,7 +67,7 @@ body * {
     left: 40px;
     opacity: 0.9;
     z-index: 1000;
-    width: 10vw;
+    width: 15vh;
 }
 
 #dnbradio img {
@@ -85,17 +90,23 @@ body * {
     height: 5em;
     width: 10em;
     background: repeating-linear-gradient(135deg,
-            #83c3f1,
-            #83c3f1 15px,
+            var(--accent-color),
+            var(--accent-color) 15px,
             #FFFFFF 15px,
             #FFFFFF 30px);
     z-index: 1001;
     padding: 0;
 }
 
+#main-menu-list-container img {
+    position: fixed;
+    bottom: 4px;
+    right: 4em;
+}
+
 #main-menu-list-container {
     display: inline-block;
-    width: calc(100% - 12em);
+    width: calc(100% - 12.5em);
     position: relative;
     right: 0;
     background-color: var(--midgray);
@@ -120,13 +131,15 @@ body * {
 
 marquee {
     padding-right: 1em;
+    font-weight: 700;
 }
 
 a {
     color: unset !important;
-    border-bottom: 3px solid transparent !important;
+    border-bottom: 2px solid transparent !important;
 }
 
 a:hover {
-    border-bottom: 3px solid #FFFFFF !important;
+    border-bottom: 2px solid #FFFFFF !important;
 }
+
