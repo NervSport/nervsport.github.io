@@ -58,7 +58,7 @@
 
 
 :root {
-    --midgray: #404040A0;
+    --midgray: #707070;
     --accent-color: #400000C0;
     --super-green: #2ecc71;
     --accent-color: #0275b2;
@@ -149,7 +149,7 @@ body * {
     width: calc(100% - 12.5em);
     position: relative;
     right: 0;
-    background-color: var(--midgray);
+    /*background-color: var(--midgray);*/
     /*background-image: url("../assets/poly.png");
     background-position: right;
     background-size: contain;
@@ -162,9 +162,9 @@ body * {
     --aug-border-bg: transparent;
     --aug-inlay-all: 0px;
     --aug-inlay-bg: var(--midgray);
-    /*border: 2px solid var(--midgray);*/
+    border: none;
     text-align: left;
-    padding-top: 4px;
+    padding-top: 8px;
     color: #FFFFFF;
     padding-left: 16px;
 }
@@ -191,4 +191,104 @@ marquee {
     font-style: italic;
     font-size: 50%;
     color: var(--cyber-orange);
+}
+
+
+.battlefield-container {
+    position: relative;
+    text-align: center;
+    height: 50vh;
+}
+
+div.battlefield {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 20vw - 34px);
+    display: inline-block;
+    width: calc(40vw + 48px);
+    height: calc(20vw + 30px);
+    margin: 0;
+    --aug-t: 10px;
+    --aug-b: 10px;
+    --aug-t-extend1: 45px;
+    --aug-b-extend1: 45px;
+    padding: 10px;
+    background: none !important;
+    border: none !important;
+    --aug-border-bg: #808080;
+    --aug-border-all: 8px;
+    --aug-inlay-bg: linear-gradient(white, #F0F0F0);
+
+    /*--aug-inlay-bg:
+        linear-gradient(transparent, white, transparent),
+        repeating-linear-gradient(135deg,
+        #F0F0F0,
+        #F0F0F0 20px,
+        #FFFFFF 20px,
+        #FFFFFF 40px);*/
+    --aug-tl: 24px;
+    --aug-tr: 24px;
+    --aug-bl: 24px;
+    --aug-br: 24px;
+}
+
+
+.battlefield-container table {
+    border-collapse: collapse;
+    width: calc(60vw + 80px);
+    height: calc(20vw + 20px);
+    position: absolute;
+    top: 16px;
+    left: calc(50% - 30vw - 40px);
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+.battlefield-container td {
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    margin: 20px;
+    border: none !important;
+}
+
+td.table-separator {
+    width: 20px;
+    background: transparent;
+}
+
+.warrior {
+    display: flex !important;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --aug-border-all: 0px;
+    --aug-border-bg: var(--midgray);
+    --aug-inlay-all: 0px;
+    --aug-inset-bg: var(--midgray);
+    --aug-inlay-bg: var(--midgray);
+}
+
+.empty-warrior {
+    --aug-border-all: 4px;
+    background-color: white;
+    --aug-border-bg: #E0E0E0;
+    --aug-inlay-all: 4px;
+    --aug-inlay-bg: #F0F0F0;
+    border: none !important;
+}
+
+.warrior img {
+    width: 80%;
+    height: 80%;
 }
